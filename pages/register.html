@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/register.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+  <title>Formulario</title>
+</head>
+<body>
+  <section class="container__form">
+    <section class="content__form content__form--info">
+      <img class="form__brand" src="../assets/images/cars/form/dongfeng.png" alt="">
+      <h1 class="form__title">AX7 pro</h1>
+      <p class="form__model">Modelo 2024</p>
+      <div class="content__image">
+        <picture>
+          <source media="(min-width: 426px)" class="image" srcset="../assets/images/cars/form/ax7-pro-main.png" alt="">
+          <img class="image" src="../assets/images/cars/form/mobile/ax7-pro-main-mobile.png" alt="">
+        </picture>
+        <a class="image__link" href="">Descargar ficha técnica</a>
+      </div>
+      <div>
+        <h2 class="form__version">Versión</h2>
+        <div class="form__radiobutton">
+          <!--  -->
+          <input type="radio" name="version" class="form__radio" id="feel" checked="checked" />
+          <label class="form__label--radio" for="feel">Feel</label>
+          <!--  -->
+          <input type="radio" name="version" class="form__radio"  id="cseries" />
+          <label class="form__label--radio" for="cseries">C Series</label>
+          <!--  -->
+          <input type="radio" name="version" class="form__radio"  id="shine" />
+          <label class="form__label--radio" for="shine">Shine</label>
+        </div>
+      </div>
+      <div>
+        <h2 class="form__version price__title">Precio</h2>
+        <p class="form__price">$59,250</p>
+      </div>
+    </section>
+    <main class="content__form content__form--register">
+      <form class="form">
+        <h1>Solicitar cotización</h1>
+        <div class="form__container">
+          <label for="names" class="form__label">
+            Nombres y apellidos
+            <input id="names" type="text" class="form__input" placeholder="Nombres y apellidos">
+          </label>
+        </div>
+        <div class="custom-select form__container">
+          <label for="custom-select" class="form__label">Tipo de documento</label>
+          <select class="form__input" id="custom-select">
+            <option>Tipo de documento</option>
+            <option value="opcion2">DNI</option>
+            <option value="opcion3">Pasaporte</option>
+          </select>
+        </div>
+        <div class="form__container">
+          <label for="names" class="form__label">
+            Número de documento
+            <input id="names" type="text" class="form__input" placeholder="Número de documento">
+          </label>
+        </div>
+        <div class="form__container">
+          <label for="names" class="form__label">
+            Celular
+            <input id="names" type="text" class="form__input" placeholder="Número de celular">
+          </label>
+        </div>
+        <div class="form__container">
+          <label for="names" class="form__label">
+            Email
+            <input id="names" type="text" class="form__input" placeholder="Email">
+          </label>
+        </div>
+        <div class="custom-select form__container">
+          <label for="custom-select" class="form__label">Cantón</label>
+          <select class="form__input" id="custom-select">
+            <option>Cantón</option>
+            <option value="opcion2">Cantón 1</option>
+            <option value="opcion3">Cantón 2</option>
+          </select>
+        </div>
+        <div class="custom-select form__container">
+          <label for="custom-select" class="form__label">Sucursal</label>
+          <select class="form__input" id="custom-select">
+            <option>Sucursal</option>
+            <option value="opcion2">Sucursal 1</option>
+            <option value="opcion3">Sucursal 2</option>
+          </select>
+        </div>
+        <div>
+          <label for="cbox" class="form__label cbox__label checkbox-container accordion__label">
+            <input type="checkbox" class="checkbox-input" id="cbox">
+            <div class="custom-checkbox">
+              <div class="checkmark"></div>
+            </div>
+            <span class="checkbox-label">
+              He leído y acepto la política de privacidad vigente (<a href="" class="cbox__link">Ver aquí</a>)
+            </span>
+          </label>
+        </div>
+        <div class="container__button">
+          <button class="form__button">Cotizar</button>
+        </div>
+      </form>
+    </main>
+  </section>
+</body>
+</html>

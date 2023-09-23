@@ -1,0 +1,129 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #fdb326;
+    --secondary: #ff8a5c;
+    --tertiary: #2656d4;
+    --white: #ffffff;
+    --black: #000000;
+    --height-header: 80px;
+    --height-header-all: 122px;
+    --font-family: "Open Sans", sans-serif;
+    --font-size: 16px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+  }
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: var(--font-family);
+    background-color: #fafafa;
+    font-size: var(--font-size);
+    overflow-x: hidden;
+  }
+  html {
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+    /*     scroll-padding-top: var(--height-header); */
+    background-color: #fafafa;
+  }
+  a,
+  p,
+  div,
+  input,
+  select,
+  button,
+  textarea {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-style: normal;
+  }
+  input::placeholder,
+  select::placeholder,
+  textarea::placeholder {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-style: normal;
+  }
+  a {
+    text-decoration: none;
+    color: var(--black);
+  }
+  i {
+    margin-left: 5px;
+  }
+  ul,
+  ol,
+  li {
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-size);
+  }
+  svg {
+    vertical-align: middle;
+  }
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+  input[type="search"]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .header-container-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 1000;
+  }
+  .body-container-wrapper {
+    /*     padding-top: var(--height-header); */
+    /*     margin-top:var(--height-header); */
+  }
+  .s-section {
+    min-width: 300px;
+    max-width: 1360px;
+    margin: 0 auto;
+  }
+  .p-section {
+    padding: 0 5%;
+  }
+  .row-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* {#Form#} */
+  @media (max-width: 533px) {
+    form {
+      min-width: inherit !important;
+      max-width: 100% !important;
+      list-style: none;
+    }
+  }
+  form * {
+    list-style: none !important;
+  }
+  /* {#ERROR HUBSPOT#} */
+  ._HS-react-root .hs-ls-module-hover-overlay.updated-editor-styles {
+    display: none !important;
+  }
+</style>
