@@ -1,0 +1,259 @@
+body{
+  background-color: #F5F6F8;
+}
+.container__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 3rem auto;
+  font-family: DM Sans, 'sans-serif';
+}
+.content__form {
+  width: 60%;
+}
+.content__form--register {
+  width: 40%;
+  max-width: 430px;
+  min-width: 430px;
+}
+
+/* MAIN */
+
+.form__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0em;
+  margin-block-end: 1rem;
+}
+.form__model {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.content__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.image__link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #E53232;
+}
+
+/*  SELECT */
+
+.form__radio[type="radio"] {
+  display: none;
+}
+.form__label--radio {
+  position: relative;
+  color: #1C1919;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 0.8em;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+}
+.form__radio[type="radio"]:checked + .form__label--radio:before {
+  height: 1em;
+  width: 1em;
+  border: 0.65em solid #ffffff;
+  background-color: #E53232;
+}
+.form__radio[type="radio"]:checked + .form__label--radio {
+  background-color: #E53232;
+  color: #ffffff;
+}
+
+/*  */
+
+
+.form__version {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0em;
+}
+.form__radiobutton {
+  display: flex;
+  gap: 1rem;
+}
+.form__label--radio {
+  display: flex;
+  width: 20%;
+  background-color: white;
+  padding: .25rem 1rem;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.form__label--radio:checked {
+  border: 1px solid #E53232;
+}
+.form__radio {
+  opacity: 0;
+}
+.price__title {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.form__price {
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 12px;
+  margin-block-start: 1.75rem;
+  letter-spacing: 0em;
+}
+@media (hover:hover) {
+  .form__label--radio:hover {
+    border: 1px solid #E53232;
+  }
+}
+
+
+/* FORM */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: DM Sans, 'sans-serif';
+  background-color: white;
+  border-radius: 5px;
+  padding: 1.5rem 3rem;
+  gap: .85rem;
+}
+.form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: #212529;
+}
+.form__container {
+  width: 100%;
+}
+.form__input {
+  padding: .5rem .5rem;
+  border-radius: 4px;
+  border: 1px solid #3C3D3F;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.form__input::placeholder {
+  color: #6C757D;
+  font-size: 13px;
+}
+.custom-select .form__input{
+  width: 100%;
+  color: #7B7B7B;
+  margin-top: 0.25rem;
+}
+.cbox__label {
+  flex-direction: row;
+  align-items: center;
+  color: #7B7B7B;
+  font-family: DM Sans, 'sans-serif';
+}
+.cbox__link {
+  color: #E53232;
+  text-decoration: none;
+}
+.container__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.form__button {
+  padding: 5px 63px 7px 62px;
+  border-radius: 25px;
+  background-color: #E53232;
+  font-family: DM Sans, 'sans-serif';
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@media screen and (min-width:1020px) {
+  .container__form {
+    flex-direction: row;
+  }
+}
+
+/* CHECKBOX */
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+.checkbox-input {
+  display: none;
+}
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #CECECE;
+  margin-right: .5rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.checkbox-label {
+  cursor: pointer;
+}
+.custom-checkbox .checkmark {
+  width: 16px;
+  height: 16px;
+  background-color: #FF7070;
+  border: 1px solid #FF7070;
+  border-radius: 2px;
+  display: none;
+}
+.checkbox-input:checked + .custom-checkbox .checkmark {
+  display: block;
+}
+@media (hover:hover) {
+  .custom-checkbox:hover {
+    background-color: #eeeeee;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .container__form {
+    width: 90%;
+  }
+
+  .content__form {
+    width: 100%;
+  }
+
+  /*  SELECT */
+
+  .form__radio[type="radio"]:checked + .form__label--radio {
+    border: 1px solid #E53232;
+    color: #000;
+    background-color: #ffffff;
+  }
+}

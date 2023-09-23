@@ -1,0 +1,19 @@
+:root {
+  --font: DM Sans, 'sans-serif';
+
+  --red: #E53232;
+  --background: #F5F6F8;
+  --white: #fff;
+  --black: #000;
+  --border: #E3E3E3;
+  --black-text: #1C1C1C;
+  --black-text1: #1A1818;
+  --parraph: #909090;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
