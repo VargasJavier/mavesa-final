@@ -12,8 +12,7 @@
 }
 .container__title {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 2rem; 
   left: 0;
   right: 0;
   display: flex;
@@ -21,29 +20,31 @@
   align-items: center;
 }
 .content__title {
-  width: 40%;
+  width: 90%;
   color: var(--white);
   text-align: center;
   font-family: var(--font);
-  font-size: 3.125rem;
+  font-size: 2.1rem;
   font-style: normal;
-  font-weight: 800;
-  line-height: 3.063rem;
+  font-weight: 600;
+  line-height: 2.063rem;
 }
 
 /* CONTAINER BRANDS */
 
 .container__brands {
-  height: 64px;
+  min-height: 64px;
   background: linear-gradient(83deg, rgba(215, 37, 37, 0.20) 0%, rgba(80, 14, 14, 0.07) 25.52%, rgba(0, 0, 0, 0.00) 48.96%, rgba(79, 13, 13, 0.07) 77.08%, rgba(215, 37, 37, 0.20) 100%), #272323;
 }
 .brands__list {
   height: 100%;
+  margin-top: 0.75rem;
   display: flex;
   list-style: none;
   justify-content: center;
   align-items: center;
   gap: 3.5rem;
+  transform: translateX(0%);
 }
 
 /* CARD */
@@ -51,7 +52,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   margin: 3.5rem 0;
 }
 .title__card {
@@ -63,7 +64,7 @@
   text-align: center;
 }
 .container__cards {
-  overflow-x: auto;
+  overflow-x: hidden;
   display: flex;
   justify-content: start;
   padding: 2.5rem;
@@ -178,7 +179,7 @@
 .service {
   cursor: pointer;
   height: 270px;
-  width: 49%;
+  width: 48.5%;
   border-radius: 1.625rem;
   position: relative;
   background: linear-gradient(155deg, rgba(192, 14, 14, 0.20) 0%, rgba(192, 39, 39, 0.00) 68.75%), var(--black);
@@ -213,7 +214,7 @@
   flex-direction: column;
   gap: 1rem;
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 30px;
   width: 37.5%;
 }
@@ -360,9 +361,7 @@
   text-decoration: none;
 }
 .link__cards--container {
-  display: flex;
-  justify-content: center;
-  padding: 3rem;
+  display: none;
 }
 @media (hover:hover) { 
   .new__link .logo__link:hover {
@@ -405,20 +404,54 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+.slider-controls,
+.slider-brand-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2.5rem;
+}
+
+@media screen and (min-width: 425px) {
+  .content__title {
+    font-size: 2.3rem;
+  }
+  .container__title {
+    top: 3.5rem;
+  }  
+  .brands__list {
+    flex-wrap: wrap;
+    gap: 2rem;
+    row-gap: 1rem;
+    padding: 1rem 0;
+  }
+  .brands__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+  }
+  .slider-controls,
+  .slider-brand-controls {
+    display: none;
+  }
+  .container__cards {
+    overflow-x: auto;
+    padding: 0 2rem 2rem;
+  }
+  .link__cards--container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
   
   /* SECTION BANNER */
-  
-  .container__title {
-    position: absolute;
-    top: -130px;
-  }
-  
-  .content__title {
-    width: 90%;
-    font-size: 2.1rem;
-    line-height: 2.063rem;
-    font-weight: 600;
+
+  .container__brands {
+    overflow-x: hidden;
   }
 
   /* CARD */
@@ -429,11 +462,9 @@
   }
 
   .card__car {
-    display: flex;
     flex-direction: column;
-    font-family: var(--font);
     border-radius: 1.125rem;
-    border: 1px solid var(--border);
+    min-width: 304px;
   }
 
   .card__content {
@@ -447,9 +478,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
-
+  
   .container__brand-card {
     margin-bottom: 0px;
+    max-width: 50%;
   }
 
   .card__title {
@@ -458,6 +490,8 @@
 
   .card__container--button {
     justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 8px;
   }
 
   .logo{
@@ -518,5 +552,306 @@
 
   .service__content {
     width: 62%;
+  }
+
+  /* NEWS */
+
+  .new {
+    max-width: 100%;
+  }
+  
+  .control-btn {
+    background-color: #1E1D1D;
+    color: white;
+    border-radius: 8px;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .control-btn .img {
+    width: 16px;
+    height: 16px;
+    color: white;
+    fill: white;
+  }
+  .img__prev {
+    transform: rotate(180deg);
+  }
+
+  .prev-btn {
+    margin-right: 20px;
+  }
+
+  .next-btn {
+    margin-left: 20px;
+  }
+
+  .slider-dots,
+  .slider-brand-dots {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .dot,
+  .brand-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .dot.active,
+  .brand-dot.active {
+    background-color: #333;
+  }
+
+  .image__brand {
+    min-height: 35px;
+    object-fit: none;
+    object-position: right;
+  }
+
+  .initial_position {
+    transform: translateX(-0%);
+  }
+  
+  .mid_position {
+    transform: translateX(-84%);
+  }
+  
+  .final_position {
+    transform: translateX(-126%);
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .banner {
+    min-height: 15rem;
+    object-fit: cover;
+  }
+  .slider-controls,
+  .slider-brand-controls {
+    display: none;
+  }
+  .card__car {
+    flex-direction: row;
+  }
+  .card__content {
+    width: 200px;
+  }
+  .service {
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  
+  /* SECTION BANNER */
+
+  .container__brands {
+    overflow-x: hidden;
+  }
+
+  /* CARD */
+
+  .title__card {
+    font-size: 1.8rem;
+    line-height: 2.063rem;
+  }
+
+  .card__car {
+    border-radius: 1.125rem;
+    min-width: 304px;
+  }
+
+  .card__content {
+    padding: 0.7rem .95rem;
+  }
+
+  .container__brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .container__brand-card {
+    margin-bottom: 0px;
+    max-width: 50%;
+  }
+
+  .card__title {
+    align-self: center;
+  }
+
+  .card__container--button {
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+
+  .logo{
+    width: 28.5%;
+  }
+
+  .logo-resize {
+    width: 50px;
+  }
+  
+  .logo__link {
+    margin-top: .5rem;
+    color: var(--red);
+    font-size: 0.9rem;
+  }
+
+  /* PLACES */
+  
+  .content__places {
+    flex-wrap: wrap;
+  }
+
+  .link__cards--container {
+    margin-top: 2.2rem;
+    padding: 0rem;
+  }
+
+  .title__place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* SERVICE */
+
+  .service {
+    background-image: URL('assets/images/services/mobile/neumaticos.png');
+  }
+
+  .service__sucursales {
+    background-image: URL('assets/images/services/mobile/sucursales.png');
+  }
+  .service__enderezado {
+    background-image: URL('assets/images/services/mobile/desabolladura.png');
+  }
+  .service__seguros {
+    background-image: URL('assets/images/services/mobile/seguros.png');
+  }
+
+  .service__full {
+    width: 100%;
+    background-image: URL('assets/images/services/mobile/postventa.png');
+  }
+
+  .service__content {
+    width: 62%;
+  }
+
+  /* NEWS */
+
+  .new {
+    max-width: 100%;
+  }
+  
+  .control-btn {
+    background-color: #1E1D1D;
+    color: white;
+    border-radius: 8px;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .control-btn .img {
+    width: 16px;
+    height: 16px;
+    color: white;
+    fill: white;
+  }
+  .img__prev {
+    transform: rotate(180deg);
+  }
+
+  .prev-btn {
+    margin-right: 20px;
+  }
+
+  .next-btn {
+    margin-left: 20px;
+  }
+
+  .slider-dots,
+  .slider-brand-dots {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .dot,
+  .brand-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .dot.active,
+  .brand-dot.active {
+    background-color: #333;
+  }
+
+  .image__brand {
+    min-height: 35px;
+    object-fit: none;
+    object-position: right;
+  }
+
+  .initial_position {
+    transform: translateX(-0%);
+  }
+  
+  .mid_position {
+    transform: translateX(-84%);
+  }
+  
+  .final_position {
+    transform: translateX(-126%);
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .container__title {
+    top: 1.5rem;
+  }
+  .content__title {
+    width: 40%;
+    font-size: 3.125rem;
+    font-weight: 800;
+    line-height: 3.063rem;
+  }
+  .container__brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .brands__list {
+    flex-wrap: nowrap;
+    gap: 2.5rem;
+    row-gap: 0;
+    padding: 0;
+    margin-top: 0;
   }
 }

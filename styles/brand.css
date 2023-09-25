@@ -1,0 +1,622 @@
+body {
+  margin: 0;
+  font-family: DM Sans, 'sans-serif';
+}
+.slider-container {
+  width: 100%;
+  position: relative;
+  /* overflow: hidden; */
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  flex: 0 0 100%;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.slide-text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 5rem;
+  margin: auto;
+  left: 40px;
+  color: white;
+  width: 40%;
+  max-width: 100%;
+  padding: 1rem;
+}
+.content__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.slide__title {
+  font-size: 45px;
+  line-height: 49px;
+  font-weight: 600;
+}
+.slide__link {
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+}
+.control-btn {
+  background-color: #1E1D1D;
+  color: white;
+  border-radius: 8px;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.control-btn .img {
+  width: 16px;
+  height: 16px;
+  color: white;
+  fill: white;
+}
+.img__prev {
+  transform: rotate(180deg);
+}
+.control-btn img {
+  color: white;
+  fill: white;
+}
+.prev-btn {
+  margin-right: 20px;
+}
+.next-btn {
+  margin-left: 20px;
+}
+.slider-dots {
+  display: flex;
+  justify-content: center;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #333;
+}
+
+/* CARD */
+
+.card__product {
+  border: 1px solid #E3E3E3;
+  border-radius: 18px;
+  padding: 27px 18px;
+  max-width: 305px;
+  margin: 0 auto;
+}
+.product__title {
+  color: #1A1818;
+  font-family: DM Sans, 'sans serif';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 12px;
+  margin-block-end: 0;
+}
+.product__text {
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+  color: #1A1818;
+  font-family: DM Sans, 'sans serif';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 12px;
+  margin-block-start: 0.85rem;
+}
+.container__product--image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.product__image {
+  width: 225px;
+  height: 124px;
+  object-fit: contain;
+}
+.product__label {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 10px;
+}
+.product__container--buttons {
+  margin-top: 1.5rem;
+}
+.product__button {
+  font-family: DM Sans, 'sans serif';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  border: 1px solid #000;
+  background-color: transparent;
+  padding: .5rem 1rem;
+  border-radius: 21px;
+  width: 52.5%;
+  transition: .3s;
+  cursor: pointer;
+}
+.product__button--red {
+  background-color: #E53232;
+  border-color: #E53232;
+  color: white;
+  width: 45%;
+}
+
+@media (hover:hover) {
+  .product__button:hover {
+    opacity: .7;
+  }
+}
+
+/* TAB */
+
+.tab-container {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.tab.active {
+  border-bottom: 2px solid #E53232;
+  font-weight: bold;
+}
+.tab-content {
+  padding: 20px;
+}
+.tab-panel {
+  display: none;
+}
+.tab-panel.active {
+  display: block;
+}
+
+
+/* CARD */
+.container__models {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3.5rem 0;
+}
+.title__card {
+  color: var(--black);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  line-height: 39px;
+}
+.container__cards {
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2.5rem 1rem;
+  width: 85vw;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.content__cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.card__car {
+  display: flex;
+  font-family: var(--font);
+  border-radius: 1.125rem;
+  border: 1px solid var(--border);
+}
+.image__car {
+  height: 100%;
+}
+.card__content {
+  padding: 0.5rem .75rem;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 170px;
+}
+.container__brand-card {
+  display: flex;
+  justify-content: flex-end;
+}
+.card__title {
+  color: var(--black-text1);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.75rem; /* 66.667% */
+}
+.price__text {
+  font-size: 0.688rem;
+  font-weight: 300;
+}
+.card__container--button {
+  display: flex;
+  justify-content: flex-end;
+}
+.card__button {
+  padding: 8px 20px;
+  flex-shrink: 0;
+  border-radius: 1.313rem;
+  background: var(--red);
+  border: none;
+  color: var(--white);
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.75rem; /* 85.714% */
+  cursor: pointer;
+}
+.link__cards {
+  display: inline-flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--black);
+  background: var(--white);
+  color: var(--black-text);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.75rem; /* 75% */
+  text-decoration: none;
+  transition: .5s;
+}
+
+@media (hover:hover) {
+  .link__cards:hover {
+    background-color: var(--black-text);
+    color: var(--white);
+  }
+}
+
+@media screen and (min-width: 1275px) {
+  .container__cards {
+    justify-content: center;
+  }
+}
+
+
+/* SERVICES */
+
+.container__services {
+  width: 80%;
+  margin: 0 auto;
+}
+.content__services {
+  max-width: 1100px;
+  margin: 2rem auto;  
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__title {
+  font-family: DM Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.services__parraph {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.container__services {
+  width: 100%;
+  margin: 0 auto;
+}
+.content__services {
+  max-width: 1100px;
+  margin: 2rem;  
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service {
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  border-radius: 1.625rem;
+  position: relative;
+  background: linear-gradient(155deg, rgba(192, 14, 14, 0.20) 0%, rgba(192, 39, 39, 0.00) 68.75%), #000;
+  background-image: URL('../assets/images/services/mobile/neumaticos.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  overflow: hidden;
+  transition: .5s;
+}
+.service__sucursales {
+  background-image: URL('../assets/images/services/mobile/sucursales.png');
+}
+.service__enderezado {
+  background-image: URL('../assets/images/services/mobile/desabolladura.png');
+}
+.service__seguros {
+  background-image: URL('../assets/images/services/mobile/seguros.png');
+}
+.service__full {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  background-image: URL('../assets/images/services/postventa.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50%;
+  background-size: contain;
+}
+.service__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 37.5%;
+}
+.service__title,
+.service__text {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-block: 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.625rem; /* 40% */
+}
+.service__text {
+  color: var(--white);
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.438rem; /* 127.778% */
+}
+.service__link {
+  font-weight: 500;
+  color: var(--black);
+  background-color: var(--white);
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: .5s;
+}
+
+@media (hover:hover) {
+  .service:hover {
+    transform: translateY(-7.5px);
+  }
+  .service__link:hover {
+    opacity: .5;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .slider-controls {
+    bottom: -30px;
+  }
+
+  .control-btn {
+    display: none;
+  }
+
+  .slide-text {
+    left: 20px;
+    width: 60%;
+    bottom: 2rem;
+    align-items: end;
+  }
+
+  .slide__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .slide__link {
+    display: none;
+  }
+
+  /* CARD */
+
+  .title__card {
+    font-size: 1.8rem;
+    width: 70%;
+  }
+
+  /* SERVICE */
+
+  .service__sucursales {
+    background-image: URL('../assets/images/services/mobile/sucursales.png');
+  }
+  .service__enderezado {
+    background-image: URL('../assets/images/services/mobile/desabolladura.png');
+  }
+  .service__seguros {
+    background-image: URL('../assets/images/services/mobile/seguros.png');
+  }
+
+  .tab,
+  .tab-card {
+    padding: 0.625rem .7rem;
+  }
+}  
+
+@media screen and (min-width: 425px) {
+  .slider-controls {
+    bottom: -30px;
+  }
+
+  .control-btn {
+    display: none;
+  }
+
+  .slide-text {
+    left: 20px;
+    width: 60%;
+    bottom: 2rem;
+    align-items: end;
+  }
+
+  .slide__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .slide__link {
+    display: none;
+  }
+
+  /* CARD */
+
+  .title__card {
+    font-size: 1.8rem;
+    width: 70%;
+  }
+
+  .product__button {
+    font-size: 14px;
+  }
+
+  /* SERVICE */
+
+  .tab,
+  .tab-card {
+    padding: 0.625rem .7rem;
+  }
+}  
+
+@media screen and (min-width: 680px) {
+  .slider-controls {
+    bottom: -30px;
+  }
+
+  .control-btn {
+    display: none;
+  }
+
+  .slide-text {
+    left: 20px;
+    width: 60%;
+    bottom: 2rem;
+    align-items: end;
+  }
+
+  .slide__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .slide__link {
+    display: none;
+  }
+
+  /* CARD */
+
+  .title__card {
+    font-size: 1.8rem;
+    width: 70%;
+  }
+
+  .container__cards {
+    padding: 2.5rem;
+    flex-direction: row;
+  }
+
+  /* SERVICE */
+
+  .service {
+    height: 241px;
+    height: 250px;
+    width: 47.5%;
+    background-image: URL('../assets/images/services/neumaticos.png');
+  }
+
+  .service__sucursales {
+    background-image: URL('../assets/images/services/sucursales.png');
+  }
+  .service__enderezado {
+    background-image: URL('../assets/images/services/desabolladura.png');
+  }
+  .service__seguros {
+    background-image: URL('../assets/images/services/seguros.png');
+  }
+
+  .service__content {
+    width: 62%;
+  }
+
+  .tab,
+  .tab-card {
+    padding: 0.625rem .7rem;
+  }
+}  
+
+@media screen and (min-width: 1120px) {
+  .content__services {
+    margin: 2rem auto;
+  }
+  .service {
+    height: 270px;
+  }
+  .service__title,
+  .service__text {
+    color: var(--white);
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem; /* 40% */
+  }
+  .service__text {
+    color: var(--white);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.438rem; /* 127.778% */
+  }
+}

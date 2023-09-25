@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/config/variables.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+  <title>Mavesa</title>
+</head>
+<body>
+  <h1>HEADER</h1>
+  <main>
+    <section id="container__banner" class="container container__banner">
+      <div class="container__title">
+        <h2 class="content__title">Todo lo que necesitas en un solo lugar</h2>
+      </div>
+      <picture>
+        <source class="banner" srcset="assets/images/banner.png" media="(min-width: 680px)" alt="Conjunto de vehículos que ofrece la empresa">
+        <img class="banner" width="100%" height="100%" src="assets/images/banner-mobile.png" alt="Conjunto de vehículos que ofrece la empresa">
+      </picture>
+    </section>
+    <section class="container__brands">
+      <ul class="brands__list">
+        <li class="brands__item"><img class="brands__icon" src="assets/images/brands/bomag.png" alt=""></li>
+        <li class="brands__item"><img class="brands__icon" src="assets/images/brands/skywell.png" alt=""></li>
+        <li class="brands__item"><img class="brands__icon" src="assets/images/brands/hing.png" alt=""></li>
+        <li class="brands__item"><img class="brands__icon" src="assets/images/brands/dongfeng.png" alt=""></li>
+        <li class="brands__item"><img class="brands__icon" src="assets/images/brands/citroen.png" alt=""></li>
+        <li class="brands__item"><img class="brands__icon" src="assets/images/brands/zxauto.png" alt=""></li>
+        <li class="brands__item"><img class="brands__icon" src="assets/images/brands/ds-automobiles.png" alt=""></li>
+        <li class="brands__item"><img class="brands__icon" src="assets/images/brands/liugong.png" alt=""></li>
+        <li class="brands__item"><img class="brands__icon" src="assets/images/brands/astec.png" alt=""></li>
+      </ul>
+    </section>
+    <div class="slider-brand-controls">
+      <div class="slider-brand-dots">
+        <span class="brand-dot active"></span>
+        <span class="brand-dot"></span>
+        <span class="brand-dot"></span>
+      </div>
+    </div>
+    <section class="container__models">
+      <h2 class="title__card">¿Qué vehículo buscas?</h2>
+      <section class="container__cards">
+        <section class="content__cards">
+          <article class="card__car">
+            <div class="card__image">
+              <picture>
+                <source media="(min-width: 680px)" class="image__car" srcset="assets/images/cards/citroen_c5_1.png">
+                <img class="image__car" src="assets/images/cards/citroen_c5_1-mobile.png" alt="">
+              </picture>
+            </div>
+            <div class="card__content">
+              <div>
+                <div>
+                  <div class="container__brand">
+                    <h3 class="card__title">C5 Air cross</h3>
+                    <div class="container__brand-card"><img src="assets/images/brands/citroen-black.png" alt="" class="image__brand"></div>
+                  </div>
+                  <div class="card__container--price">
+                    <span class="price__text">desde</span>
+                    <p class="price__mount">$36,900</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__container--button">
+                <button class="card__button">Ver modelo</button>
+              </div>
+            </div>
+          </article>
+          <article class="card__car">
+            <div class="card__image">
+              <picture>
+                <source media="(min-width: 680px)" class="image__car" srcset="assets/images/cards/sx6pro.png">
+                <img class="image__car" src="assets/images/cards/citroen_c5_1-mobile.png" alt="">
+              </picture>
+            </div>
+            <div class="card__content">
+              <div>
+                <div>
+                  <div class="container__brand">
+                    <h3 class="card__title">SX6 Pro</h3>
+                    <div class="container__brand-card"><img src="assets/images/brands/dongfeng-black.png" alt="" class="image__brand"></div>
+                  </div>
+                  <div class="card__container--price">
+                    <span class="price__text">desde</span>
+                    <p class="price__mount">$57,300</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__container--button">
+                <button class="card__button">Ver modelo</button>
+              </div>
+            </div>
+          </article>
+          <article class="card__car">
+            <div class="card__image">
+              <picture>
+                <source media="(min-width: 680px)" class="image__car" srcset="assets/images/cards/crossback.png">
+                <img class="image__car" src="assets/images/cards/citroen_c5_1-mobile.png" alt="">
+              </picture>
+            </div>
+            <div class="card__content">
+              <div>
+                <div>
+                  <div class="container__brand">
+                    <h3 class="card__title">DS4 crossback</h3>
+                    <div class="container__brand-card"><img src="assets/images/brands/ds-automobiles-black.png" alt="" class="image__brand"></div>
+                  </div>
+                  <div class="card__container--price">
+                    <span class="price__text">desde</span>
+                    <p class="price__mount">$62,800</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__container--button">
+                <button class="card__button">Ver modelo</button>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+      <div class="slider-controls">
+        <button id="prevBtn" class="control-btn prev-btn"><img class="img img__prev" src="../assets/images/icons/arrowHorizontal.svg" alt=""></button>
+        <p id="pagination" class="pagination"></p>
+        <button id="nextBtn" class="control-btn next-btn"><img class="img" src="../assets/images/icons/arrowHorizontal.svg" alt=""></button>
+      </div>
+      <a class="link__cards" href="">Ver todas las marcas</a>
+    </section>
+    <section class="container__services">
+      <h2 class="title__card">Servicios que ofrecemos</h2>
+      <article class="service service__full">
+        <div class="service__content">
+          <h3 class="service__title">Servicios Post venta</h3>
+          <p class="service__text">El servicio personalizado que tú y tu vehículo merecen</p>
+          <div class="service__link--container">
+            <a class="service__link" href="">Ver más</a>
+          </div>
+        </div>
+      </article>
+      <section class="content__services">
+        <article class="service">
+          <div class="service__content">
+            <h3 class="service__title">Neumáticos</h3>
+            <p class="service__text">El servicio personalizado que tú y tu vehículo merecen</p>
+            <div class="service__link--container">
+              <a class="service__link" href="">Ver más</a>
+            </div>
+          </div>
+        </article>
+        <article class="service service__sucursales">
+          <div class="service__content">
+            <h3 class="service__title">Sucursales y talleres</h3>
+            <p class="service__text">El servicio personalizado que tú y tu vehículo merecen</p>
+            <div class="service__link--container">
+              <a class="service__link" href="">Ver más</a>
+            </div>
+          </div>
+        </article>
+        <article class="service service__enderezado">
+          <div class="service__content">
+            <h3 class="service__title">Enderezado y pintura</h3>
+            <p class="service__text">El servicio personalizado que tú y tu vehículo merecen</p>
+            <div class="service__link--container">
+              <a class="service__link" href="">Ver más</a>
+            </div>
+          </div>
+        </article>
+        <article class="service service__seguros">
+          <div class="service__content">
+            <h3 class="service__title">Seguros</h3>
+            <p class="service__text">El servicio personalizado que tú y tu vehículo merecen</p>
+            <div class="service__link--container">
+              <a class="service__link" href="">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
+    <section class="container__logos">
+      <h2 class="title__card">Nuestras marcas</h2>
+      <section class="content__logos">
+        <a class="logo" href="">
+          <img class="logo__image logo-resize" src="assets/images/brands/black/hino-black.png" alt="Logo de marca Hino">
+          <span class="logo__link">Ver marcas ></span>
+        </a>
+        <a class="logo" href="">
+          <img class="logo__image" src="assets/images/brands/black/dongfeng-black.png" alt="Logo de marca Hino">
+          <span class="logo__link">Ver marcas ></span>
+        </a>
+        <a class="logo" href="">
+          <img class="logo__image logo-resize" src="assets/images/brands/black/citroen-black.png" alt="Logo de marca Hino">
+          <span class="logo__link">Ver marcas ></span>
+        </a>
+        <a class="logo" href="">
+          <img class="logo__image" src="assets/images/brands/black/zxauto-black.png" alt="Logo de marca Hino">
+          <span class="logo__link">Ver marcas ></span>
+        </a>
+        <a class="logo" href="">
+          <img class="logo__image logo-resize" src="assets/images/brands/black/dsautomoviles-black.png" alt="Logo de marca Hino">
+          <span class="logo__link">Ver marcas ></span>
+        </a>
+        <a class="logo" href="">
+          <img class="logo__image" src="assets/images/brands/black/astec-black.png" alt="Logo de marca Hino">
+          <span class="logo__link">Ver marcas ></span>
+        </a>
+        <a class="logo" href="">
+          <img class="logo__image" src="assets/images/brands/black/bomag-black.png" alt="Logo de marca Hino">
+          <span class="logo__link">Ver marcas ></span>
+        </a>
+        <a class="logo" href="">
+          <img class="logo__image" src="assets/images/brands/black/skywell-black.png" alt="Logo de marca Hino">
+          <span class="logo__link">Ver marcas ></span>
+        </a>
+        <a class="logo" href="">
+          <img class="logo__image" src="assets/images/brands/black/liugong-black.png" alt="Logo de marca Hino">
+          <span class="logo__link">Ver marcas ></span>
+        </a>
+      </section>
+    </section>
+    <section class="container__news">
+      <h2 class="title__card">Novedades</h2>
+      <section class="container__cards">
+        <section class="content__news">
+          <article class="new">
+            <div class="new__content--image">
+              <img class="new__image" src="assets/images/news/mavesa.png" alt="">
+            </div>
+            <section class="content__new">
+              <div class="news__content">
+                <p class="new__text">AGO 01 <span class="new__category">Coyuntura</span></p>
+                <h3 class="new__title">Grupo Mavesa en el salon del automovil</h3>
+              </div>
+              <div class="new__link">
+                <a class="logo__link" href="">Ver nota ></a>
+              </div>
+            </section>
+          </article>
+          <article class="new">
+            <div class="new__content--image">
+              <img class="new__image" src="assets/images/news/mavesa.png" alt="">
+            </div>
+            <section class="content__new">
+              <div class="news__content">
+                <p class="new__text">AGO 02 <span class="new__category">Novedad</span></p>
+                <h3 class="new__title">Grupo Mavesa gana todos los premios</h3>
+              </div>
+              <div class="new__link">
+                <a class="logo__link" href="">Ver nota ></a>
+              </div>
+            </section>
+          </article>
+          <article class="new">
+            <div class="new__content--image">
+              <img class="new__image" src="assets/images/news/mavesa.png" alt="">
+            </div>
+            <section class="content__new">
+              <div class="news__content">
+                <p class="new__text">AGO 03 <span class="new__category">Noticia</span></p>
+                <h3 class="new__title">Grupo Mavesa entra en cierrapuertas</h3>
+              </div>
+              <div class="new__link">
+                <a class="logo__link" href="">Ver nota ></a>
+              </div>
+            </section>
+          </article>
+        </section>
+      </section>
+      <div class="slider-controls">
+        <button id="prevBtn-v" class="control-btn prev-btn"><img class="img img__prev" src="../assets/images/icons/arrowHorizontal.svg" alt=""></button>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button id="nextBtn-v" class="control-btn next-btn"><img class="img" src="../assets/images/icons/arrowHorizontal.svg" alt=""></button>
+      </div>
+      <div class="link__cards--container">
+        <a class="link__cards" href="">Ver todas las marcas</a>
+      </div>
+    </section>
+    <section class="container__places">
+      <h2 class="title__card title__place">
+        <img src="assets/images/icons/marker.svg" alt="">
+        Estamos cerca de tí
+      </h2>
+      <section class="content__places">
+        <a class="place__link" href="">Guayaquil</a>
+        <a class="place__link" href="">Quito</a>
+        <a class="place__link" href="">Ambato</a>
+        <a class="place__link" href="">Cuenca</a>
+        <a class="place__link" href="">Machala</a>
+        <a class="place__link" href="">Riobamba</a>
+        <a class="place__link" href="">Santo Domingo</a>
+        <a class="place__link" href="">Portoviejo</a>
+        <a class="place__link" href="">Manta</a>
+        <a class="place__link" href="">Ibarra</a>
+        <a class="place__link" href="">Loja</a>
+      </section>
+      <div class="link__cards--container">
+        <a class="link__cards" href="">Ver todas las tiendas y talleres</a>
+      </div>
+    </section>
+  </main>
+  <script >
+    const brandSlider = document.querySelector(".brands__list");
+    const brandSlides = document.querySelectorAll(".brands__item");
+    let brandCurrentIndex = 0;
+
+    function updateBrandSliderPosition() {
+      const classNames = ['initial_position', 'mid_position', 'final_position']
+      // brandSlider.style.transform = `translateX(-${brandCurrentIndex * 42}%)`;
+      brandSlider.classList.remove(classNames[classNames.length - 1])
+      brandSlider.classList.add(classNames[brandCurrentIndex])
+
+      brandSlider.classList.remove(classNames[brandCurrentIndex - 1])
+    }
+
+    const brandDots = document.querySelectorAll(".brand-dot");
+
+
+    function nextBrandSlide() {
+      brandCurrentIndex = brandCurrentIndex < (brandDots.length - 1) ? (brandCurrentIndex + 1) : 0;
+      updateBrandSliderPosition();
+      updateBrandActiveDot();
+    }
+
+    brandDots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        brandCurrentIndex = index;
+        updateBrandSliderPosition();
+        updateBrandActiveDot();
+      });
+    });
+
+    function updateBrandActiveDot() {
+      brandDots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === brandCurrentIndex);
+      });
+    }
+
+    updateBrandSliderPosition();
+    updateBrandActiveDot();
+    // setInterval(nextBrandSlide, 7000);
+  </script>
+  <script >
+    const paginationSlider = document.querySelector(".content__cards");
+    const paginationSlides = document.querySelectorAll(".card__car");
+    const pagination = document.getElementById("pagination");
+    let paginationCurrentIndex = 0;
+    
+    function updatePagination() {
+      pagination.textContent = `${paginationCurrentIndex + 1} / ${paginationSlides.length}`;
+    }
+
+    function updatePaginationSliderPosition() {
+      paginationSlider.style.transform = `translateX(-${paginationCurrentIndex * 33}%)`;
+    }
+
+    const paginationPrevBtn = document.getElementById("prevBtn");
+    const paginationNextBtn = document.getElementById("nextBtn");
+
+    paginationPrevBtn.addEventListener("click", () => {
+      paginationCurrentIndex = (paginationCurrentIndex - 1 + paginationSlides.length) % paginationSlides.length;
+      updatePaginationSliderPosition();
+      updatePagination();
+    });
+
+    paginationNextBtn.addEventListener("click", () => {
+      paginationCurrentIndex = (paginationCurrentIndex + 1) % paginationSlides.length;
+      updatePaginationSliderPosition();
+      updatePagination();
+    });
+
+    updatePaginationSliderPosition();
+    updatePagination();
+  </script>
+  <script >
+    const slider = document.querySelector(".content__news");
+    const slides = document.querySelectorAll(".new");
+    let currentIndex = 0;
+    function updateSliderPosition() {
+      slider.style.transform = `translateX(-${currentIndex * 36}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSliderPosition();
+      updateActiveDot();
+    }
+
+    const prevBtn = document.getElementById("prevBtn-v");
+    const nextBtn = document.getElementById("nextBtn-v");
+    const dots = document.querySelectorAll(".dot");
+
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSliderPosition();
+      updateActiveDot();
+    });
+
+    nextBtn.addEventListener("click", nextSlide);
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        currentIndex = index;
+        updateSliderPosition();
+        updateActiveDot();
+      });
+    });
+
+    function updateActiveDot() {
+      dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentIndex);
+      });
+    }
+
+    updateSliderPosition();
+    updateActiveDot();
+  </script>
+</body>
+</html>
