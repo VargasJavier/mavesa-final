@@ -16,6 +16,19 @@
       <source srcset="../assets/images/banner-model.png" media="(min-width: 680px)">
       <img class="banner" src="../assets/images/banner-model-mobile.png" alt="">
     </picture>
+    <div class="content__banner">
+      <div class="content__banner-child">
+        <h2 class="banner__title">C5 Air cross</h2>
+        <p class="banner__test">Precio desde $36,900</p>
+        <section class="container__links desktop">
+          <div class="content__links">
+            <button class="link">Ficha técnica</button>
+            <button class="link">Modelo citroen</button>
+            <button class="link">Cotizar</button>
+          </div>
+        </section>
+      </div>
+    </div>
   </section>
   <section class="container__links">
     <div class="content__links">
@@ -109,10 +122,15 @@
       <div class="tab-panel">
         <section class="view__model">
           <section class="view__content">
-            <picture>
-              <source media="(min-width: 426px)" class="view__image" srcset="../assets/images/360/Citroen-C5-Aircross.png" alt="">
-              <img class="view__image" src="../assets/images/360/Citroen-C5-Aircross-mobile.png" alt="">
-            </picture>
+            <div id="threesixty2">
+            </div>
+            <div class="rotation__controls">
+              <div class="rotation__content">
+                <img src="../assets/images/icons/left_arrow.svg" alt="Flecha Izquierda">
+                <p>ARRASTRA PARA ROTAR</p>
+                <img src="../assets/images/icons/right_arrow.svg" alt="Flecha Derecha">
+              </div>
+            </div>
             <div class="color-selector">
               <label for="color1" class="color-circle" style="background-color: #E53232;"></label>
               <input type="radio" id="color1" name="color" value="#E53232" class="hidden-radio">
@@ -466,6 +484,31 @@
       speed: 100,
       prev: document.getElementById('prev__btn-rotation'),
       next: document.getElementById('next__btn-rotation'),
+    });
+    const threesixty2 = new ThreeSixty(document.getElementById('threesixty2'), {
+      image: [
+      '../assets/3d/carro_1.webp',
+      '../assets/3d/carro_2.webp',
+      '../assets/3d/carro_3.webp',
+      '../assets/3d/carro_4.webp',
+      '../assets/3d/carro_5.webp',
+      '../assets/3d/carro_6.webp',
+      '../assets/3d/carro_7.webp',
+      '../assets/3d/carro_8.webp',
+      '../assets/3d/carro_9.webp',
+      '../assets/3d/carro_10.webp',
+      '../assets/3d/carro_11.webp',
+      '../assets/3d/carro_12.webp',
+      '../assets/3d/carro_13.webp',
+      '../assets/3d/carro_14.webp',
+      ],
+      width: 930,
+      height: 320,
+      count: 14,
+      perRow: 1,
+      speed: 100,
+      prev: document.getElementById('prev__btn-rotation2'),
+      next: document.getElementById('next__btn-rotation2'),
     });
   </script>
   <script>
