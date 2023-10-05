@@ -8,9 +8,12 @@ body {
   max-width: 151.563rem;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 .container__banner {
   position: relative;
 }
+=======
+>>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 .banner {
   width: 100%;
 }
@@ -91,7 +94,10 @@ body {
 .image__feature {
   object-fit: cover;
   height: 100%;
+<<<<<<< HEAD
   width: 100%;
+=======
+>>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 }
 .image__text {
   position: absolute;
@@ -101,7 +107,11 @@ body {
   color: white;
   font-size: 1.563rem;
   font-weight: 500;
+<<<<<<< HEAD
   line-height: 1.75rem;
+=======
+  line-height: 0.75rem;
+>>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   letter-spacing: 0em;
 }
 
@@ -139,14 +149,22 @@ body {
   border-bottom: 2px solid #ccc;
 }
 .tab,
+<<<<<<< HEAD
 .tab-card, 
 .tab-version {
+=======
+.tab-card {
+>>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   padding: 0.625rem 1.25rem;
   cursor: pointer;
 }
 .tab.active,
+<<<<<<< HEAD
 .tab-card.active,
 .tab-version.active {
+=======
+.tab-card.active {
+>>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   border-bottom: 2px solid #E53232;
   font-weight: bold;
 }
@@ -154,6 +172,7 @@ body {
   padding: 1.25rem;
 }
 .tab-panel,
+<<<<<<< HEAD
 .tab-panel-card,
 .tab-panel-version {
   display: none;
@@ -168,6 +187,16 @@ body {
   display: none;
 }
 
+=======
+.tab-panel-card {
+  display: none;
+}
+.tab-panel.active,
+.tab-panel-card.active {
+  display: block;
+}
+
+>>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 /* COLOR SELECTOR */
 
 .color-selector {
@@ -216,14 +245,22 @@ input[type="radio"]:checked + .color-circle {
   font-weight: 700;
   text-align: center;
   width: 65%;
+<<<<<<< HEAD
   margin: 1.5rem auto;
+=======
+  margin: 0 auto;
+>>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   line-height: 2.438rem;
 }
 .container__cards {
   overflow-x: auto;
   display: flex;
   justify-content: start;
+<<<<<<< HEAD
   padding: 2.5rem 0;
+=======
+  padding: 2.5rem;
+>>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   width: 70vw;
   margin: 0 auto;
   gap: 1rem;
@@ -320,7 +357,10 @@ input[type="radio"]:checked + .color-circle {
 .card__product {
   border: 1px solid #E3E3E3;
   border-radius: 1.125rem;
+<<<<<<< HEAD
   max-width: 260px;
+=======
+>>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   padding: 27px 1.125rem;
   background-color: white;
 }
@@ -508,6 +548,7 @@ input[type="radio"]:checked + .color-circle {
 .alert__button {
   width: 8rem;
   height: 2.25rem;
+<<<<<<< HEAD
 }
 
 .control-btn {
@@ -716,3 +757,6 @@ input[type="radio"]:checked + .color-circle {
     color: white;
   }
 }
+=======
+}
+>>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a

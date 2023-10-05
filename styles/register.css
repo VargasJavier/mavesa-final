@@ -8,7 +8,6 @@ body{
   justify-content: center;
   width: 80%;
   margin: 3rem auto;
-  font-family: DM Sans, 'sans-serif';
 }
 .content__form {
   width: 60%;
@@ -56,7 +55,10 @@ body{
 .form__label--radio {
   position: relative;
   color: #1C1919;
+<<<<<<< HEAD
+=======
   font-family: "Poppins", sans-serif;
+>>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -127,7 +129,6 @@ body{
 .form {
   display: flex;
   flex-direction: column;
-  font-family: DM Sans, 'sans-serif';
   background-color: white;
   border-radius: 5px;
   padding: 1.5rem 3rem;
@@ -169,7 +170,6 @@ body{
   flex-direction: row;
   align-items: center;
   color: #7B7B7B;
-  font-family: DM Sans, 'sans-serif';
 }
 .cbox__link {
   color: #E53232;
@@ -184,7 +184,6 @@ body{
   padding: 5px 63px 7px 62px;
   border-radius: 25px;
   background-color: #E53232;
-  font-family: DM Sans, 'sans-serif';
   color: white;
   font-weight: 600;
   font-size: 1rem;
@@ -237,6 +236,7 @@ body{
   .custom-checkbox:hover {
     background-color: #eeeeee;
   }
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 425px) {
@@ -256,4 +256,6 @@ body{
     color: #000;
     background-color: #ffffff;
   }
+=======
+>>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 }
