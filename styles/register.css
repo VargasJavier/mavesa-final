@@ -55,10 +55,6 @@ body{
 .form__label--radio {
   position: relative;
   color: #1C1919;
-<<<<<<< HEAD
-=======
-  font-family: "Poppins", sans-serif;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -236,7 +232,6 @@ body{
   .custom-checkbox:hover {
     background-color: #eeeeee;
   }
-<<<<<<< HEAD
 }
 
 @media screen and (max-width: 425px) {
@@ -256,6 +251,4 @@ body{
     color: #000;
     background-color: #ffffff;
   }
-=======
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 }

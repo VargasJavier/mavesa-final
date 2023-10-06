@@ -2,29 +2,17 @@
   background-color: #F5F6F8;
 }
 .container__banner {
-<<<<<<< HEAD
   height: 353px;
   background: linear-gradient(155deg, rgba(192, 14, 14, 0.20) 0%, rgba(192, 39, 39, 0.00) 68.75%), #000;
   background-image: URL('../assets/images/banner-pintura-mobile.png');
   background-repeat: no-repeat;
   background-position: bottom;
-=======
-  height: 270px;
-  background: linear-gradient(155deg, rgba(192, 14, 14, 0.20) 0%, rgba(192, 39, 39, 0.00) 68.75%), #000;
-  background-image: URL('../assets/images/banner-pintura.png');
-  background-repeat: no-repeat;
-  background-position: right;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   overflow: hidden;
   transition: .5s;
 }
 .container__breadcrumb {
   padding: 2rem;
-<<<<<<< HEAD
   width: 100%;
-=======
-  width: 50%;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   color: white;
 }
 .breadcrumb__link {
@@ -45,19 +33,11 @@
 .banner__title {
   font-size: 2rem;
   font-weight: 700;
-<<<<<<< HEAD
   margin-block: 1.5rem .5rem;
   letter-spacing: 0em;
 }
 .banner__text {
   font-size: 0.9rem;
-=======
-  margin-block: 1.25rem .5rem;
-  letter-spacing: 0em;
-}
-.banner__text {
-  font-size: 1rem;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   font-weight: 300;
   line-height: 23px;
   letter-spacing: 0em;
@@ -70,16 +50,6 @@
     text-decoration: none;
   }
 }
-<<<<<<< HEAD
-=======
-@media screen and ( min-width: 1020px ) {
-  .container__breadcrumb {
-    padding: 2.5rem;
-    width: 40%;
-    color: white;
-  }
-}
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 
 /* SERVICE */
 .container__services {
@@ -134,15 +104,9 @@
   justify-content: flex-end;
 }
 .service__button {
-<<<<<<< HEAD
   background-color: var(--red);
   border-radius: 21px;
   border: 1px solid var(--red);
-=======
-  background-color: #E53232;
-  border-radius: 21px;
-  border: none;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   color: white;
   font-weight: 500;
   font-size: 0.875rem;
@@ -160,16 +124,12 @@
 .content__info {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   align-items: center;
-=======
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   gap: 2rem;
   width: 80%;
   max-width: 1080px;
   margin: 3rem auto 5rem;
 }
-<<<<<<< HEAD
 .content__form {
   width: 100%;
   background-color: white;
@@ -180,10 +140,6 @@
 .info {
   display: flex;
   flex-direction: column-reverse;
-=======
-.info {
-  display: flex;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   gap: 2rem;
 }
 .info__image {
@@ -211,15 +167,10 @@ hr {
 
 .container__form {
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
   width: 100%;
-=======
-  gap: 2.5rem;
-  width: 80%;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   max-width: 1080px;
   margin: 0 auto;
   padding: 3rem 0;
@@ -229,7 +180,6 @@ hr {
 /* FORM */
 
 .info__title--form {
-<<<<<<< HEAD
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 42px;
@@ -237,20 +187,10 @@ hr {
   letter-spacing: 0em;
   color: #1C1919;
   width: 100%;
-=======
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 42px;
-  margin-block: 1.25rem;
-  letter-spacing: 0em;
-  color: #1C1919;
-  width: 65%;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 }
 .info__title--form .discount {
   color: #E53232;
 }
-<<<<<<< HEAD
 .form {
   display: flex;
   flex-direction: column;
@@ -264,22 +204,6 @@ hr {
 .image__form {
   height: 125px;
 }
-=======
-
-.content__form {
-  width: 50%;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  font-family: DM Sans, 'sans-serif';
-  background-color: white;
-  border-radius: 5px;
-  min-width: 420px;
-  padding: 1.5rem 3rem;
-  gap: .85rem;
-}
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 .form__title {
   font-size: 28px;
   font-weight: 700;
@@ -345,14 +269,6 @@ hr {
   outline: none;
   cursor: pointer;
 }
-<<<<<<< HEAD
-=======
-@media screen and (min-width:1020px) {
-  .container__form {
-    flex-direction: row;
-  }
-}
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 
 /* CHECKBOX */
 
@@ -391,7 +307,6 @@ hr {
 .checkbox-input:checked + .custom-checkbox .checkmark {
   display: block;
 }
-<<<<<<< HEAD
 
 /* STORE */
 
@@ -400,13 +315,10 @@ hr {
   display: none;
 }
 
-=======
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 @media (hover:hover) {
   .custom-checkbox:hover {
     background-color: #eeeeee;
   }
-<<<<<<< HEAD
   .link__cards:hover {
     background-color: var(--black-text);
     color: var(--white);
@@ -414,6 +326,62 @@ hr {
 }
 
 @media screen and (min-width: 680px) {
+
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+  }
+
+  .control-btn {
+    background-color: #1E1D1D;
+    color: white;
+    border-radius: 8px;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+  .control-btn .img {
+    width: 16px;
+    height: 16px;
+    color: white;
+    fill: white;
+  }
+  .img__prev {
+    transform: rotate(180deg);
+  }
+  .control-btn img {
+    color: white;
+    fill: white;
+  }
+  .prev-btn {
+    margin-right: 20px;
+  }
+  .next-btn {
+    margin-left: 20px;
+  }
+  .slider-dots {
+    display: flex;
+    justify-content: center;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .dot.active {
+    background-color: #333;
+  }
 
   .container__breadcrumb {
     width: 50%;
@@ -594,6 +562,4 @@ hr {
     text-decoration: none;
     transition: .5s;
   }
-=======
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 }

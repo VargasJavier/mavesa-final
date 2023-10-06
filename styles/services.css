@@ -38,27 +38,17 @@
   max-width: 1100px;
   margin: 2rem;  
   gap: 1rem;
-<<<<<<< HEAD
   /* display: flex;
   flex-wrap: wrap;
   justify-content: center; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-=======
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 }
 .service {
   cursor: pointer;
   height: 250px;
-<<<<<<< HEAD
   min-width: 300px;
-=======
-  width: 47.5%;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   border-radius: 26px;
   position: relative;
   background: linear-gradient(155deg, rgba(192, 14, 14, 0.20) 0%, rgba(192, 39, 39, 0.00) 68.75%), #000;
@@ -94,11 +84,7 @@
   position: absolute;
   top: 30px;
   left: 40px;
-<<<<<<< HEAD
   width: 50%;
-=======
-  width: 35%;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 }
 .service__title,
 .service__text {
@@ -124,7 +110,6 @@
   text-decoration: none;
   transition: .5s;
 }
-<<<<<<< HEAD
 @media screen and (min-width: 920px) {
   .content__services {
     display: flex;
@@ -136,22 +121,13 @@
     width: 47.5%;
   }
 }
-=======
-
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 @media screen and (min-width: 1120px) {
   .content__services {
     margin: 2rem auto;
   }
-<<<<<<< HEAD
   .container__text--services {
     padding: 3rem;
     margin: 3rem auto 0;
-=======
-  .service {
-    height: 270px;
-    width: 49%;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   }
   .service__title,
   .service__text {
@@ -170,10 +146,7 @@
   }
   .service__content {
     top: 50px;
-<<<<<<< HEAD
     width: 35%;
-=======
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   }
 }
 
@@ -184,7 +157,6 @@
   .service__link:hover {
     opacity: .5;
   }
-<<<<<<< HEAD
 }
 
 @media screen and (max-width: 425px) {
@@ -235,6 +207,4 @@
   .service__content {
     width: 62%;
   }
-=======
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 }

@@ -5,11 +5,7 @@ body {
 .slider-container {
   width: 100%;
   position: relative;
-<<<<<<< HEAD
   /* overflow: hidden; */
-=======
-  overflow: hidden;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 }
 .slider {
   display: flex;
@@ -228,14 +224,9 @@ img {
 .container__cards {
   overflow-x: auto;
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;
   justify-content: start;
   padding: 2.5rem 1rem;
-=======
-  justify-content: start;
-  padding: 2.5rem;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   width: 85vw;
   margin: 0 auto;
   gap: 1rem;
@@ -358,11 +349,7 @@ img {
 }
 
 .container__services {
-<<<<<<< HEAD
   width: 100%;
-=======
-  width: 80%;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   margin: 0 auto;
 }
 .content__services {
@@ -376,26 +363,17 @@ img {
 .service {
   cursor: pointer;
   height: 250px;
-<<<<<<< HEAD
   width: 100%;
   border-radius: 1.625rem;
   position: relative;
   background: linear-gradient(155deg, rgba(192, 14, 14, 0.20) 0%, rgba(192, 39, 39, 0.00) 68.75%), #000;
   background-image: URL('../assets/images/services/mobile/neumaticos.png');
-=======
-  width: 47.5%;
-  border-radius: 1.625rem;
-  position: relative;
-  background: linear-gradient(155deg, rgba(192, 14, 14, 0.20) 0%, rgba(192, 39, 39, 0.00) 68.75%), #000;
-  background-image: URL('../assets/images/services/neumaticos.png');
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   background-repeat: no-repeat;
   background-position: right;
   overflow: hidden;
   transition: .5s;
 }
 .service__sucursales {
-<<<<<<< HEAD
   background-image: URL('../assets/images/services/mobile/sucursales.png');
 }
 .service__enderezado {
@@ -403,15 +381,6 @@ img {
 }
 .service__seguros {
   background-image: URL('../assets/images/services/mobile/seguros.png');
-=======
-  background-image: URL('../assets/images/services/sucursales.png');
-}
-.service__enderezado {
-  background-image: URL('../assets/images/services/desabolladura.png');
-}
-.service__seguros {
-  background-image: URL('../assets/images/services/seguros.png');
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 }
 .service__full {
   width: 100%;
@@ -459,7 +428,6 @@ img {
   transition: .5s;
 }
 
-<<<<<<< HEAD
 .footer {
   display: flex;
   justify-content: space-between;
@@ -647,18 +615,12 @@ img {
   }
 } 
 
-=======
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 @media screen and (min-width: 1120px) {
   .content__services {
     margin: 2rem auto;
   }
   .service {
     height: 270px;
-<<<<<<< HEAD
-=======
-    width: 49%;
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   }
   .service__title,
   .service__text {
@@ -675,16 +637,4 @@ img {
     font-weight: 300;
     line-height: 1.438rem; /* 127.778% */
   }
-<<<<<<< HEAD
-=======
-}
-
-@media (hover:hover) {
-  .service:hover {
-    transform: translateY(-7.5px);
-  }
-  .service__link:hover {
-    opacity: .5;
-  }
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
 }

@@ -27,10 +27,7 @@ body {
   padding: 1.5rem;
   background-color: #FFF;
   width: 250px;
-<<<<<<< HEAD
   height: 100%;
-=======
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
   position: sticky;
   top: 50px;
 }
@@ -395,7 +392,6 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-<<<<<<< HEAD
 .filter__back {
   display: none;
 }
@@ -540,5 +536,3 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-=======
->>>>>>> c2981fa6fd8feb5c945dec09fcf1993c7bf4575a
